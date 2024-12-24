@@ -16,6 +16,9 @@ import 'slick-carousel/slick/slick.css';
 import { Project } from 'types/projectType';
 import { SECONDARY_COLOR } from '../../../utils/constants';
 import styles from '../../common/project/styles.module.css';
+import Project5 from '../../../public/images/pdemo5.jpg';
+
+
 
 interface Props {
   projects: Project[];
@@ -73,7 +76,7 @@ export default function ProjectItems({ projects }: Props) {
               <ProjectContainer className={styles.projectContainer}>
                 <Image
                   className={styles.projectImage}
-                  src={project.images[0].url}
+                  src={Project5}
                   alt={project.title}
                   width={500}
                   height={600}
