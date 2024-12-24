@@ -2,15 +2,16 @@
     "version": 2,
     "builds": [
       {
-        "src": "pages/api/**/*",
-        "use": "@vercel/node"
+        "src": "app.js",
+        "use": "@vercel/node",
+        "config": { "includeFiles": ["dist/**"] }
       }
     ],
-    "functions": {
-      "pages/api/**/*": {
-        "memory": 1024,
-        "maxDuration": 600
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "app.js"
       }
-    }
+    ]
   }
   
