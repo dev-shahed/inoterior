@@ -8,7 +8,7 @@ interface Props {
 }
 
 export default function BusinessIdea({ project }: Props) {
-  //const { ideas, images, _id, title, featureImg } = project;
+  const { ideas, images, _id, title, featureImg } = project;
 
   console.log(project);
 

@@ -73,7 +73,7 @@ export default function ProjectItems({ projects }: Props) {
               <ProjectContainer className={styles.projectContainer}>
                 <Image
                   className={styles.projectImage}
-                  src={project.image}
+                  src={project.images[0].url}
                   alt={project.title}
                   width={500}
                   height={600}
