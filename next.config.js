@@ -7,11 +7,12 @@ module.exports = {
     domains: ['images.pexels.com', 'images.unsplash.com', 'arcon.s3.amazonaws.com'],
   },
 };
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // <=== enables static exports
-  reactStrictMode: true,
+  images: {
+    unoptimized: true, // Disable Next.js image optimization for static exports
+  },
+  output: 'export', // Ensure this is for static export
 };
 
 module.exports = nextConfig;
