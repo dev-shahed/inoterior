@@ -2,6 +2,7 @@
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
+  output: 'export',
   images: {
     domains: ['images.pexels.com', 'images.unsplash.com', 'arcon.s3.amazonaws.com'],
   },
@@ -9,7 +10,7 @@ module.exports = {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",  // <=== enables static exports
+  output: 'export', // <=== enables static exports
   reactStrictMode: true,
 };
 
