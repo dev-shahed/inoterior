@@ -5,9 +5,12 @@
       "destination": "/"
     }
   ],
-  "functions": {
-    "pages/api/index.js": {
-      "maxDuration": 60
-    }
+  
+    "functions": {
+      "api/**.js": {
+        "maxDuration": 60
+      }
+    
   }
+  
 }
