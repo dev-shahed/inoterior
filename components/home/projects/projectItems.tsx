@@ -17,8 +17,7 @@ import { Project } from 'types/projectType';
 import { SECONDARY_COLOR } from '../../../utils/constants';
 import styles from '../../common/project/styles.module.css';
 import Project5 from '../../../public/images/pdemo5.jpg';
-
-
+import items from './data';
 
 interface Props {
   projects: Project[];
@@ -66,11 +65,12 @@ export default function ProjectItems({ projects }: Props) {
     ],
   };
 
+
   return (
     <>
       <Box sx={{ ml: { md: 10, xl: 40 }, overflow: 'hidden', px: { xs: 4, sm: 0 } }}>
         <Slider {...settings}>
-          {projects.map((project) => (
+          {items.map((project) => (
             <Box key={project._id}>
               {console.log(project)}
               <ProjectContainer className={styles.projectContainer}>

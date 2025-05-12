@@ -38,7 +38,7 @@ export const HeaderTitle = styled(Typography)<TypographyProps>(() => ({
 }));
 
 export const Description = styled(Typography)<TypographyProps>(() => ({
-  fontWeight: 400,
+  fontWeight: 300,
   lineHeight: '27px',
   letterSpacing: '0.3px',
   color: '#777777',
